@@ -26,7 +26,7 @@ export default function Topbar() {
       <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
         {/* Tabs */}
         <nav style={{ display: "flex", alignItems: "center", gap: 20 }}>
-          <button style={{ fontSize: 13, fontWeight: 700, color: "#111827", borderBottom: "2px solid #111827", paddingBottom: 2, background: "none", border: "none", borderBottom: "2px solid #111827", cursor: "pointer" }}>
+          <button style={{ fontSize: 13, fontWeight: 700, color: "#111827", paddingBottom: 2, background: "none", border: "none", borderBottom: "2px solid #111827", cursor: "pointer" }}>
             General
           </button>
           <button style={{ fontSize: 13, color: "#9CA3AF", background: "none", border: "none", cursor: "pointer" }}>

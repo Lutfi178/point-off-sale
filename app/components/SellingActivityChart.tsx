@@ -52,7 +52,7 @@ export default function SellingActivityChart() {
               contentStyle={{ background: "#1F2937", border: "none", borderRadius: 8, padding: "8px 12px" }}
               labelStyle={{ color: "#9CA3AF", fontSize: 11 }}
               itemStyle={{ color: "#fff", fontSize: 13, fontWeight: 600 }}
-              formatter={(v: number) => [`$${v}`, ""]}
+              formatter={(value) => [`$${value}`, ""]}
               cursor={{ stroke: "#E4432A", strokeWidth: 1, strokeDasharray: "4 4" }}
             />
             <Line
