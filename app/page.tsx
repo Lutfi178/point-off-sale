@@ -8,25 +8,20 @@ import StockReceipt from "./components/StockReceipt";
 
 export default function Dashboard() {
   return (
-    <div className="flex h-screen bg-[#EEF1F6]">
-      {/* Sidebar */}
+    <div style={{ display: "flex", minHeight: "100vh", backgroundColor: "#EEF1F6" }}>
+      {/* Fixed Sidebar */}
       <Sidebar />
 
-      {/* Main Content */}
-      <div className="ml-[288px] flex-1 flex flex-col min-h-screen overflow-auto">
+      {/* Main Content — takes remaining space after sidebar */}
+      <div style={{ flex: 1, marginLeft: "260px", display: "flex", flexDirection: "column", minHeight: "100vh" }}>
         {/* Topbar */}
         <Topbar />
 
-        {/* Content */}
-        <main className="flex-1 p-6 space-y-5">
-          {/* Stat Cards */}
+        {/* Page body */}
+        <main style={{ flex: 1, padding: "24px", display: "flex", flexDirection: "column", gap: "20px" }}>
           <StatCards />
-
-          {/* Selling Activity Chart */}
           <SellingActivityChart />
-
-          {/* Bottom Tables */}
-          <div className="grid grid-cols-3 gap-5">
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "20px" }}>
             <LatestTransaction />
             <PopularProduct />
             <StockReceipt />
